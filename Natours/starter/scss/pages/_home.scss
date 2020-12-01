@@ -22,3 +22,21 @@
         text-shadow: .5rem 1rem 2rem #ccc;
     }
 }
+
+.section-features{
+    padding:20rem 0;
+    background-image: linear-gradient(to bottom right, rgba($lightGreen, 0.8), rgba($darkGreen, 0.8)), url(../img/nat-4.jpg);
+    background-size:cover;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+.section-tours{
+    background-color: $grey-light-1;
+    padding: 25rem 0 50rem 0;
+    margin-top: -10rem;
+}

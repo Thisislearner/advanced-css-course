@@ -1,3 +1,5 @@
+@import"abhishek_additional/_aboutAnimation";
+
 @import "abstract/functions";
 @import "abstract/mixins";
 @import "abstract/variables";
@@ -8,7 +10,9 @@
 @import "base/utilities";
 
 @import "components/buttons";
+@import "components/card";
 @import "components/compositions";
+@import"components/feature-box";
 
 @import "layout/_grid";
 @import "layout/headers";

@@ -1,0 +1,29 @@
+.section-about:hover{
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    transition-property: background-color;
+    animation-name: backgroundAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 9000ms;
+}
+
+@keyframes backgroundAnimation{
+    0%{
+        background-image:linear-gradient(#a6ff0011,#04ffc91a,#f806d81a,#fd002a1c);
+    }
+    20%{
+        background-image:linear-gradient(#00ff3711,#ff04041a,#f806421a,#fd002a2d);;
+    }
+    40%{
+        background-image:linear-gradient(#ff007728,#ff04c027,#2a06f81a,#fd8f0036);
+    }
+    60%{
+        background-color:#f806d81a;
+    }
+    80%{
+        background-color:#fd0a021e;
+    }
+    100%{
+        background-color:#fd002a1c;
+    }
+}
