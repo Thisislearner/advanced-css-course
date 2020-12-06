@@ -212,27 +212,48 @@ body {
 .card__side {
   font-size: 2rem;
   color: #fff;
-  transition: all 800ms ease;
+  transition: all 1800ms ease;
+  overflow: hidden;
   position: absolute;
+  border-radius: 15px;
   top: 0;
   left: 0;
   width: 40rem;
   backface-visibility: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card__side-front {
-  background-color: orangered;
   height: 50rem;
 }
 .card__side-back {
-  background-color: yellowgreen;
   height: 50rem;
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
+}
+.card__side-back-1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
 .card:hover .card__side-front {
   transform: rotateY(180deg);
 }
 .card:hover .card__side-back {
   transform: rotateY(0deg);
+}
+.card__picture {
+  background-size: cover;
+  background-blend-mode: screen;
+  height: 23rem;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.card__picture-1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../img/nat-5.jpg);
+}
+.card__picture-2 {
+  background-image: url(../../img/nat-5.jpg);
+}
+.card__picture-3 {
+  background-image: url(../../img/nat-5.jpg);
 }
 
 .composition {

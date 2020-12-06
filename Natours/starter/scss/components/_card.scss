@@ -1,3 +1,4 @@
+// FUNCTIONALITY
 .card{
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -8,22 +9,29 @@
     &__side{
         font-size:2rem;
         color:#fff;
-        transition: all 800ms ease;
+        transition: all 1800ms ease;
+        overflow: hidden;
         position: absolute;
+        border-radius: 15px;
         top:0; 
         left:0;
         width:40rem;
         backface-visibility: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
 
         &-front{
-            background-color: orangered;
+            // background-color: orangered;
             height: 50rem;
         }
         &-back{
-            background-color: yellowgreen;
             height: 50rem;
-            transform: rotateY(180deg);
+            transform: rotateY(-180deg);
+
+            &-1{
+                background-image: linear-gradient(to right bottom,$color-secondary-light, $color-secondary-dark);
+                
+            }
          }
         }
 
@@ -33,4 +41,25 @@
     &:hover &__side-back{
         transform: rotateY(0deg);
     }
+
+    //FRONTSIDE CARD DESIGN
+
+    &__picture{
+        background-size: cover;
+        background-blend-mode: screen;
+        height: 23rem;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        &-1{
+            background-image:linear-gradient(to right bottom,$color-secondary-light, $color-secondary-dark) ,url(../../img/nat-5.jpg);
+        }
+        &-2{
+            background-image: url(../../img/nat-5.jpg);
+        }
+        &-3{
+            background-image: url(../../img/nat-5.jpg);
+        }
+    }
 }
+
